@@ -1,0 +1,45 @@
+[[language]] 
+ name = "rust" 
+ scope = "source.rust" 
+ injection-regex = "rust" 
+ file-types = ["rs"] 
+ roots = ["Cargo.toml", "Cargo.lock"] 
+ auto-format = true 
+ language-server = { command = "rust-analyzer" } 
+ # formatter = { command = "rustfmt" } 
+ indent = { tab-width = 2, unit = "  " } 
+  
+ [language.config] 
+ checkOnSave = { command = "clippy" } 
+  
+ [language.debugger] 
+ name = "lldb-vscode" 
+ transport = "stdio" 
+ command = "lldb-vscode" 
+  
+ [[language.debugger.templates]] 
+ name = "binary" 
+ request = "launch" 
+ completion = [ { name = "binary", completion = "filename" } ] 
+ args = { program = "{0}" } 
+  
+ [[language.debugger.templates]] 
+ name = "binary (terminal)" 
+ request = "launch" 
+ completion = [ { name = "binary", completion = "filename" } ] 
+ args = { program = "{0}", runInTerminal = true } 
+  
+ [[language.debugger.templates]] 
+ name = "attach" 
+ request = "attach" 
+ completion = [ "pid" ] 
+ args = { pid = "{0}" } 
+  
+ [[language.debugger.templates]] 
+ name = "gdbserver attach" 
+ request = "attach" 
+ completion = [ { name = "lldb connect url", default = "connect://localhost:3333" }, { name = "file", completion = "filename" }, "pid" ] 
+ args = { attachCommands = [ "platform select remote-gdb-server", "platform connect {0}", "file {1}", "attach {2}" ] } 
+[[language]]
+name = "cpp"
+auto-format = true

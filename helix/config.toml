@@ -1,0 +1,44 @@
+theme = "base16_transparent"
+[editor]
+line-number = "absolute"
+mouse = false
+cursorline = true
+cursorcolumn = false
+auto-info = true
+bufferline = "multiple"
+idle-timeout = 0
+completion-trigger-len = 1
+color-modes = true
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+[editor.file-picker]
+hidden = true
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "none"
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = "·"
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+auto-signature-help = true
+display-signature-help-docs = true
+[editor.indent-guides]
+render = true
+character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
