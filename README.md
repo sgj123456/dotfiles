@@ -16,7 +16,7 @@ pacman -S nerd-fonts-jetbrains-mono --noconfirm
 ```
 2. 程序
 ```sh
-pacman -S fish starship waybar rofi hyprland hyprpaper alacritty zoxide fzf grim dunst thefuck helix exa atuin --noconfirm
+pacman -S fish starship waybar rofi hyprland hyprpaper alacritty zoxide fzf grim dunst thefuck helix eza atuin --noconfirm
 ```
 + Other Linux
 请自行安装所需应用
@@ -45,11 +45,11 @@ cp -r $HOME/dotfiles/* $HOME/.config/
 `fuck` 为上一条未成功执行的命令纠错
 + <kbd>Enter</kbd> 执行纠错命令
 + <kbd>Ctrl</kbd> <kbd>c</kbd> 取消纠错命令
-### exa
-+ `ls`
-+ `ls -a`
-+ `ls -l`
-+ `ls --tree --level=[数字]` 以树状显示`[数字]`层目录
+### eza
++ `eza`
++ `eza -a`
++ `eza -l`
++ `eza --tree --level=[数字]` 以树状显示`[数字]`层目录
 ### Helix
 + ...
 ## Package
@@ -61,6 +61,6 @@ cp -r $HOME/dotfiles/* $HOME/.config/
 + [Hyprland](https://hyprland.org/) 窗口管理器 
 + [Dunst](https://dunst-project.org/) 通知管理器
 + [TheFuck](https://github.com/nvbn/thefuck/) 命令行命令改错工具
-+ [exa](https://github.com/ogham/exa)  ls命令升级版
++ [eza](https://github.com/eza-community/eza)  ls命令升级版
 + [atuin](https://atuin.sh/) 历史命令查询
 + ...
