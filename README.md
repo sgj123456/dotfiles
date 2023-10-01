@@ -16,7 +16,7 @@ pacman -S nerd-fonts-jetbrains-mono --noconfirm
 ```
 2. 程序
 ```sh
-pacman -S fish starship waybar rofi hyprland hyprpaper alacritty zoxide fzf grim dunst thefuck helix eza atuin --noconfirm
+pacman -S fish starship waybar rofi hyprland hyprpaper alacritty zoxide fzf grim dunst helix eza atuin --noconfirm
 ```
 + Other Linux
 请自行安装所需应用
@@ -60,7 +60,6 @@ cp -r $HOME/dotfiles/* $HOME/.config/
 + [rofi](https://davatorium.github.io/rofi/) 窗口切换器
 + [Hyprland](https://hyprland.org/) 窗口管理器 
 + [Dunst](https://dunst-project.org/) 通知管理器
-+ [TheFuck](https://github.com/nvbn/thefuck/) 命令行命令改错工具
 + [eza](https://github.com/eza-community/eza)  ls命令升级版
 + [atuin](https://atuin.sh/) 历史命令查询
 + ...
