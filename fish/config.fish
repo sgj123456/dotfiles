@@ -5,6 +5,7 @@ if status is-interactive
     abbr ls eza
     abbr la eza -a
     abbr ll eza -l
+    abbr lt eza -T
     zoxide init fish | source
     starship init fish | source
     atuin init fish | source
